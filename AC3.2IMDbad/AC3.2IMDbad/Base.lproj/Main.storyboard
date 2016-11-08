@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1dC-9W-GqR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Brief Movie Table View Controller-->
+        <scene sceneID="FED-ja-pAL">
+            <objects>
+                <tableViewController id="N2d-Nz-fTe" customClass="BriefMovieTableViewController" customModule="AC3_2IMDbad" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lpp-XE-Dnf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="briefMovieTableViewCell" id="rEv-ud-YTR">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rEv-ud-YTR" id="BDU-bs-7hb">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N2d-Nz-fTe" id="oGB-qy-EuS"/>
+                            <outlet property="delegate" destination="N2d-Nz-fTe" id="QOP-eE-vSA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="36g-YN-l2w"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lg2-W7-kpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712.79999999999995" y="30.134932533733135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VQl-im-TBQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1dC-9W-GqR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8tb-Jk-zBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N2d-Nz-fTe" kind="relationship" relationship="rootViewController" id="pd9-V6-KNB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQI-xQ-yDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.40000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+</document>
